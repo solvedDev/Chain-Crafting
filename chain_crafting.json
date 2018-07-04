@@ -1,0 +1,318 @@
+{
+	"entity": "minecraft:sheep",
+	"never_despawn": true,
+	"recipes": [
+		{
+			"ingredients": [
+				{
+					"item": "minecraft:iron_ingot",
+					"data": 0
+				},
+				{
+					"item": "minecraft:leather",
+					"data": 0
+				},
+				{
+					"item": "minecraft:leather",
+					"data": 0
+				},
+				{
+					"item": "minecraft:leather",
+					"data": 0
+				},
+				{
+					"item": "minecraft:leather",
+					"data": 0
+				}
+			],
+			"results": [
+				{
+					"item": "minecraft:saddle",
+					"data": 0,
+					"count": 1
+				}
+			]
+		},
+		{
+			"ingredients": [
+				{
+					"item": "minecraft:iron_ingot",
+					"data": 0
+				},
+				{
+					"item": "minecraft:iron_ingot",
+					"data": 0
+				},
+				{
+					"item": "minecraft:iron_ingot",
+					"data": 0
+				},
+				{
+					"item": "minecraft:iron_ingot",
+					"data": 0
+				},
+				{
+					"item": "minecraft:iron_ingot",
+					"data": 0
+				},
+				{
+					"item": "minecraft:iron_ingot",
+					"data": 0
+				}
+			],
+			"results": [
+				{
+					"item": "minecraft:horsearmoriron",
+					"data": 0,
+					"count": 1
+				}
+			]
+		},
+		{
+			"ingredients": [
+				{
+					"item": "minecraft:gold_ingot",
+					"data": 0
+				},
+				{
+					"item": "minecraft:gold_ingot",
+					"data": 0
+				},
+				{
+					"item": "minecraft:gold_ingot",
+					"data": 0
+				},
+				{
+					"item": "minecraft:gold_ingot",
+					"data": 0
+				},
+				{
+					"item": "minecraft:gold_ingot",
+					"data": 0
+				},
+				{
+					"item": "minecraft:gold_ingot",
+					"data": 0
+				}
+			],
+			"results": [
+				{
+					"item": "minecraft:horsearmorgold",
+					"data": 0,
+					"count": 1
+				}
+			]
+		},
+		{
+			"ingredients": [
+				{
+					"item": "minecraft:diamond",
+					"data": 0
+				},
+				{
+					"item": "minecraft:diamond",
+					"data": 0
+				},
+				{
+					"item": "minecraft:diamond",
+					"data": 0
+				},
+				{
+					"item": "minecraft:diamond",
+					"data": 0
+				},
+				{
+					"item": "minecraft:diamond",
+					"data": 0
+				},
+				{
+					"item": "minecraft:diamond",
+					"data": 0
+				}
+			],
+			"results": [
+				{
+					"item": "minecraft:horsearmordiamond",
+					"data": 0,
+					"count": 1
+				}
+			]
+		},
+		{
+			"ingredients": [
+				{
+					"item": "minecraft:ice",
+					"data": 0
+				},
+				{
+					"item": "minecraft:ice",
+					"data": 0
+				},
+				{
+					"item": "minecraft:ice",
+					"data": 0
+				},
+				{
+					"item": "minecraft:ice",
+					"data": 0
+				}
+			],
+			"results": [
+				{
+					"item": "minecraft:packed_ice",
+					"data": 0,
+					"count": 1
+				}
+			]
+		},
+		{
+			"ingredients": [
+				{
+					"item": "minecraft:diamond",
+					"data": 0
+				},
+				{
+					"item": "minecraft:diamond",
+					"data": 0
+				},
+				{
+					"item": "minecraft:diamond",
+					"data": 0
+				},
+				{
+					"item": "minecraft:prismarine_shard",
+					"data": 0
+				},
+				{
+					"item": "minecraft:prismarine_shard",
+					"data": 0
+				}
+			],
+			"results": [
+				{
+					"item": "minecraft:trident",
+					"data": 0,
+					"count": 1
+				}
+			]
+		},
+		{
+			"ingredients": [
+				{
+					"item": "minecraft:dirt",
+					"data": 0
+				},
+				{
+					"item": "minecraft:wheat_seeds",
+					"data": 0
+				}
+			],
+			"results": [
+				{
+					"item": "minecraft:grass",
+					"data": 0,
+					"count": 1
+				}
+			]
+		},
+		{
+			"ingredients": [
+				{
+					"item": "minecraft:iron_ingot",
+					"data": 0
+				},
+				{
+					"item": "minecraft:paper",
+					"data": 0
+				},
+				{
+					"item": "minecraft:paper",
+					"data": 0
+				}
+			],
+			"results": [
+				{
+					"item": "minecraft:name_tag",
+					"data": 0,
+					"count": 1
+				}
+			]
+		},
+		{
+			"ingredients": [
+				{
+					"item": "minecraft:stone",
+					"data": 0
+				},
+				{
+					"item": "minecraft:iron_ingot",
+					"data": 0
+				}
+			],
+			"results": [
+				{
+					"item": "minecraft:iron_ore",
+					"data": 0,
+					"count": 1
+				}
+			]
+		},
+		{
+			"ingredients": [
+				{
+					"item": "minecraft:stone",
+					"data": 0
+				},
+				{
+					"item": "minecraft:gold_ingot",
+					"data": 0
+				}
+			],
+			"results": [
+				{
+					"item": "minecraft:gold_ore",
+					"data": 0,
+					"count": 1
+				}
+			]
+		},
+		{
+			"ingredients": [
+				{
+					"item": "minecraft:stone",
+					"data": 0
+				},
+				{
+					"item": "minecraft:emerald",
+					"data": 0
+				}
+			],
+			"results": [
+				{
+					"item": "minecraft:emerald_ore",
+					"data": 0,
+					"count": 1
+				}
+			]
+		},
+		{
+			"ingredients": [
+				{
+					"item": "minecraft:stone",
+					"data": 0
+				},
+				{
+					"item": "minecraft:diamond",
+					"data": 0
+				}
+			],
+			"results": [
+				{
+					"item": "minecraft:diamond_ore",
+					"data": 0,
+					"count": 1
+				}
+			]
+		}
+	]
+}

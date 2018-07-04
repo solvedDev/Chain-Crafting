@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Chain Crafting</title>
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="shortcut icon" type="image/x-icon" href="imgs/icon.png">
+</head>
+<body>
+	<h1>Chain Crafting</h1>
+	<label for="import">import JSON file</label>
+	<input type="file" name="import" id="import">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.5/jszip.js"></script>
+	<script src="scripts/FileSaver.js"></script>
+	<script src="scripts/utilities.js"></script>
+	<script src="scripts/main.js"></script>
+	<script>
+		document.getElementById("import").onchange = function() {
+			loadFile(this.files[0]);
+		};
+	</script>
+</body>
+</html>
