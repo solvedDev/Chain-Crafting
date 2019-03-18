@@ -4,7 +4,7 @@ You can get the items you put into the "crafting table" back at any point in tim
 
 ### Usage
 Write a JSON file to describe the recipes you want to add with the following syntax:
-```javascript
+
 {
 	"entity": "av:act",
 	"recipes": [
@@ -25,17 +25,16 @@ Write a JSON file to describe the recipes you want to add with the following syn
 		}
 	]
 }
-```
+
 You also have an example of multiple crafting recipes in one file in the main folder. Open the index.html file found in the main folder, then click on "import JSON file" and upload your already written JSON file.
 After a short amount of time, the page downloads the result of the generator as a "cc+act_bp.mcpack" file, open it, and once loaded open the "cc+act_rp.mcpack" file stored in the main folder.
 Now just create a world, add the behaviour pack and the resource pack to it, enable experimental gameplay, and have fun :D
 
 For now is only possible to summon the ACT in creative, so for it to not be destroyed by accident the entity is not punchable. To remove it, stand next to it and enter the following minecraft command "/kill @e[type=!player,c=1]
 
-
 ### Other Examples
 You can also add multiple ingredients. In this case, you start by interacting with the first item defined, then you need to interact with the second one, etc.
-```javascript
+
 {
 	"entity": "av:act",
 	"recipes": [
@@ -64,10 +63,10 @@ You can also add multiple ingredients. In this case, you start by interacting wi
 		}
 	]
 }
-```
+
 
 Chain Crafting also supports multiple results:
-```javascript
+
 {
 	"entity": "av:act",
 	"recipes": [
@@ -105,7 +104,7 @@ Chain Crafting also supports multiple results:
 		}
 	]
 }
-```
+
 
 ### Credits
 
