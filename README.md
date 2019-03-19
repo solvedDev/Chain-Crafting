@@ -26,8 +26,8 @@ Write a JSON file to describe the recipes you want to add with the following syn
 	]
 }
 ```
-You also have an example of multiple crafting recipes in one file in the main folder. Open the index.html file found in the main folder, then click on "import JSON file" and upload your already written JSON file.
-After a short amount of time, the page downloads the result of the generator as a "cc+act_bp.mcpack" file, open it, and once loaded open the "cc+act_rp.mcpack" file stored in the main folder.
+You also have an example of multiple crafting recipes in one file in the main folder. Open https://drav0011.github.io/ChainCrafting-AdvancedCraftingTable/, then click on "import JSON file" and upload your already written JSON file.
+After a short amount of time, the page downloads the result of the generator as a "cc+act_bp.mcpack" file, open it, and once loaded open download the "cc+act_rp.mcpack" file and open it too.
 Now just create a world, add the behaviour pack and the resource pack to it, enable experimental gameplay, and have fun :D
 
 For now is only possible to summon the ACT in creative, so for it to not be destroyed by accident the entity is not punchable. To remove it, stand next to it and enter the following minecraft command "/kill @e[type=!player,c=1]
