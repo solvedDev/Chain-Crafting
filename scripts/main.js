@@ -1,13 +1,30 @@
 var entity = {
+	"format_version": "1.8.0",
 	"minecraft:entity": {
-		"format_version": "1.4.0",
+		"description": {
+			"identifier": "",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": true
+		  },
 		"components": {
-			"minecraft:identifier": {
-				"id": ""
+			"minecraft:health": {
+				"value": 2,
+				"max": 2
 			},
 			"minecraft:damage_sensor": {
 				"cause": "any",
 				"deals_damage": false
+			},
+			"minecraft:knockback_resistance": {
+				"value": 100,
+				"max": 100
+			},
+			  "minecraft:push_through": {
+			  "value": 1
+			},
+			"minecraft:loot": {
+				"table": "loot_tables/act.json"
 			},
 			"minecraft:physics": {}
 		},
@@ -18,7 +35,8 @@ var entity = {
 					"add_effects": [
 						{
 							"effect": "strength",
-							"duration": 9999
+							"duration": 9999,
+							"visible": false
 						}
 					],
 					"remove_effects": [ "haste", "jump_boost" ]
@@ -37,6 +55,23 @@ var entity = {
 		}
 	}
 };
+var manifest = {
+		"format_version": 1,
+		"header": {
+			"description": "BP(Chain Crafting by solvedDev + Advanced Crafting Table by DrAv0011)",
+			"name": "BP(Chain Crafting + Advanced Crafting Table)",
+			"uuid": "ab7eaccb-53ec-4417-a417-7b11aba7566b",
+			"version": [1, 0, 0]
+		},
+		"modules": [
+			{
+				"description": "BP(Chain Crafting by solvedDev + Advanced Crafting Table by DrAv0011)",
+				"type": "data",
+				"uuid": "bbb90cbb-0c26-4731-9de7-93655b5720fb",
+				"version": [1, 0, 0]
+			}
+		]
+}
 var c_names = [];
 var loot = { normal: {}, results: {} };
 class Interaction {
@@ -89,7 +124,7 @@ function loadFile(pFile) {
 }
 
 function parseCrafting(pC) {
-	entity["minecraft:entity"]["components"]["minecraft:identifier"]["id"] = pC["entity"];
+	entity["minecraft:entity"]["description"]["identifier"] = pC["entity"];
 	let recipes = pC["recipes"];
 
 	for(let i = 0; i < recipes.length; i++) {
@@ -106,7 +141,8 @@ function parseCrafting(pC) {
 	for(let key in loot.normal) {
 		addToZip("loot_tables/chain_crafting/destruct/"+ key + ".json", JSON.stringify(loot.normal[key], undefined, "\t"));
 	}
-	downloadZip("chain_crafting.zip");
+	addToZip("manifest" + ".json", JSON.stringify(manifest, undefined, "\t"));
+	downloadZip("cc+act_bp.mcpack");
 	location.reload();
 }
 
@@ -161,7 +197,8 @@ function generateState(pS, pArr, pEnd, pFirst, pLast, pResults) {
 				add_effects: [
 					{
 						effect: "haste",
-						duration: 9999
+						duration: 9999,
+						visible: false
 					}
 				],
 				remove_effects: [ "strength" ]
@@ -174,7 +211,8 @@ function generateState(pS, pArr, pEnd, pFirst, pLast, pResults) {
 				add_effects: [
 					{
 						effect: "jump_boost",
-						duration: 9999
+						duration: 9999,
+						visible: false
 					}
 				],
 				remove_effects: [ "strength", "haste" ]
